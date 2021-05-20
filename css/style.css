@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+#app > div {
+    background-color: rgb(236, 236, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 380.312px;
+}
+
+#display,
+#answer {
+    font-size: 18px;
+    font-family: 'fira code', monospace;
+    text-align: right;
+    overflow-wrap: break-word;
+    /* padding: 2px; */
+    min-height: 24px;
+}
+
+#output {
+    background-color: rgb(51, 42, 42);
+    color: #fff;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.btn {
+    all: unset;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    font-family: 'fira code', monospace;
+    font-size: 18px;
+}
+
+.btn:active {
+    background-color: rgb(99, 98, 98);
+    border-color: thistle;
+}
+
+.ctrl {
+    background-color: rgb(110, 110, 110);
+}
+
+#equals {
+    grid-column: 4 / 6;
+    background-color: rgb(24, 132, 146);
+}
+
+#equals:active {
+    background-color: rgb(11, 91, 102);
+}
+
+#ans {
+    background-color: rgb(38, 146, 24);
+}
+
+#ans:active {
+    background-color: rgb(24, 109, 12);
+}
+
+#delete {
+    background-color: rgb(24, 42, 146);
+}
+
+#delete:active {
+    background-color: rgb(14, 28, 107);
+}
+
+#clear {
+    background-color: rgb(146, 24, 24);
+}
+
+#clear:active {
+    background-color: rgb(109, 13, 13);
+}
